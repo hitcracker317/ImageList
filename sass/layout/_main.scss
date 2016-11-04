@@ -1,0 +1,14 @@
+#main{
+	background-color: #fcc;
+
+	.list{
+		display: flex;
+		justify-content: space-around;
+
+		li{
+			float: left;
+			color: #000;
+			list-style-type: none;
+		}
+	}
+}
