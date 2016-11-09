@@ -1,17 +1,26 @@
-@import "layout/_main.scss";
+//base
+@import "base/_reset.scss";
+@import "base/_base.scss";
 
-#wrapper {
-  width: 700px;
-  margin: 0 auto;
-  background-color: #fc1;
-  box-shadow: 0px 5px #ddd;
+//tools
+@import "tool/_mixin.scss";
 
-  h1 {
-    color: #ccc;
-    background-color: #f1f1f1;
+//layout
+@import "layout/_l-main.scss";
+@import "layout/_l-header.scss";
+@import "layout/_l-image.scss";
 
-    &:hover {
-      color: #f00;
-    }
-  }
-}
+//block
+@import "block/_icon.scss";
+@import "block/_account.scss";
+@import "block/_description.scss";
+@import "block/_follow.scss";
+@import "block/_image-list.scss";
+@import "block/_image.scss";
+@import "block/_button.scss";
+
+
+
+
+
+

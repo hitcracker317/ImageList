@@ -1,0 +1,42 @@
+.button {
+    padding: 0 11px;
+    border-radius: 3px;
+    border: 1px solid #3897f0;
+    color: #3897f0;
+    font-size: 1.6rem;
+    line-height: 29px;
+    font-weight: 600;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.follow__button{	
+	@include sp {
+		width: 77%;
+	    max-width: 210px;
+		font-size: 1.4rem;
+	    line-height: 2.4rem;
+        padding: 0 9px;
+	}
+}
+
+.more__button {
+    @include tabletAndPC {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        padding: 0; 
+        border-width: 2px;
+        border-radius: 50%;
+
+        line-height: 120px;
+            
+    }
+
+    @include sp {
+        font-size: 1.4rem;    
+        line-height: 3.4rem;
+    }
+}

@@ -1,0 +1,70 @@
+.header__profile {
+    flex-grow: 2;
+    flex-basis: 30px;
+    color: #262626;
+
+    .profile__top {
+    	display: flex;
+	    align-items: center;
+		margin-bottom: 20px;
+
+		.profile__name {
+			flex-shrink: 1;
+			font-size: 3.4rem;
+			line-height: 40px;
+		    font-weight: 300;
+		    
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    overflow: hidden;
+		}
+
+		.profile__follow-state {
+			display: block;
+    		width: 18px;
+    		height: 18px;
+		    margin-left: 7px;
+
+		    background-position: -219px -115px;
+	        background-image: url("//instagramstatic-a.akamaihd.net/h1/sprites/core/d75b42.png");
+    		background-repeat: no-repeat;
+		}
+
+		.profile__button-space {
+			margin-left: 20px;
+		    flex-shrink: 0;
+		}
+    }
+
+    .profile__info {
+    	display: flex;
+    	margin-bottom: 20px;
+		justify-align: flex-start;
+		align-items: center;
+
+    	li {
+    		margin-right: 40px;
+
+    		p{
+    			font-size: 1.6rem;	
+    			
+    			span {
+    				font-size: inherit;	
+					font-weight: 600;
+	    		}	
+    		}    		
+    	}
+    }
+
+    .profile__description {
+    	
+		h2,span {
+			display: inline;
+			font-size: 1.7rem;
+			line-height: 2.4rem;
+		}
+		h2 {
+			font-weight: 600;
+		}
+    }
+}

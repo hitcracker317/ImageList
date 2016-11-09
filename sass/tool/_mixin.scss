@@ -1,0 +1,15 @@
+$widthPC: 1024px;
+$widthTab: 736px;
+$widthSP: 735px;
+
+@mixin tabletAndPC {
+	@media (min-width:$widthTab) {
+		@content;
+	}
+}
+
+@mixin sp {
+	@media (max-width:$widthSP) {
+		@content;
+	}
+}

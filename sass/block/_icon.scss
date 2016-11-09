@@ -1,0 +1,37 @@
+.header__icon {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 30px;
+
+	
+	.icon__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 152px;
+		height: 152px;
+		margin: 0 auto;
+
+		border-radius: 50%;
+		border: 1px solid #dbdbdb;
+	    box-sizing: border-box;
+
+		overflow: hidden;
+
+		img {
+	    	width: auto;
+	    	height: 100%;
+	    }
+
+	}
+    
+    @include sp {
+    	flex-grow: 0;
+    	margin-right: 28px;
+
+    	.icon__inner { 
+			width: 77px;
+    		height: 77px;
+    	}
+    }
+}

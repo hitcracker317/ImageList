@@ -1,27 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>ImageList</title>
 	<link rel="stylesheet" href="css/min/style.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/min/common.min.js"></script>
 	<script src="js/min/script.min.js"></script>
+	<!-- <script src="js/min/account.min.js"></script> -->
+	<script src="js/account.js"></script>
 </head>
 <body>
-	<div id="wrapper">
-		<h1>大見出し</h1>
-		<p>センテンスセンテンス</p>
 
-		<main id="main">
-			<ul class="list">
-				<li>イチ</li>
-				<li>ニ</li>
-				<li>サン</li>
-				<li>ダー</li>
-			</ul>
-		</main>
-	</div>
+	<main>
+		<article>
+			<header id="header">
+				<div class="header__icon">
+					<div class="icon__inner">
+						<img src="images/profile_image.jpg" alt="">	
+					</div>
+				</div>
+				<div class="header__profile">
+					<div class="profile__account">
+						<h1 class="account__name">d-e-i-s-u-i-g-i-r-l</h1>
+						<span class="account__follow-state-icon"></span>
+						<span class="account__button_wrapper">
+							<button class="button follow__button not-follow">フォローする</button>
+						</span>
+					</div>
+
+					<ul class="profile__info">
+						<li class="profile__post-count">
+							<p>投稿<span>48</span>件</p>
+						</li>
+						<li class="profile__follower-count">
+							<p>フォロワー<span>0百万</span>人</p>
+						</li>
+						<li class="profile__follow-count">
+							<p><span>555</span>人をフォロー中</p>
+						</li>
+					</ul>
+
+
+					<div class="profile__description">
+						<h2>泥酔ガール</h2>
+						<span>こんにちは泥酔ガールです★普段はシラフです!撮りためた写真を日々投稿★趣味は飲酒と海外旅行と美容と堕落★Follow me★★★★★★</span>
+					</div>
+				</div>
+			</header>	
+			
+			<div class="image-wrapper">
+				<div class="image-list">
+					<div class="image-list__content">
+						<a href="" class="image-link">
+							<img src="images/thumbnail/image1.jpg" alt="" class="image-link__img">
+							
+						</a>	
+					</div>
+					<div class="image-list__content">
+						<a href="" class="image-link">
+							<img src="images/thumbnail/image2.jpg" alt="" class="image-link__img">
+							
+						</a>	
+					</div>
+					<div class="image-list__content">
+						<a href="" class="image-link">
+							<img src="images/thumbnail/image3.jpg" alt="" class="image-link__img">
+							
+						</a>	
+					</div>
+					<div class="image-list__content">
+						<a href="" class="image-link">
+							<img src="images/thumbnail/image4.jpg" alt="" class="image-link__img">
+							
+						</a>	
+					</div>
+					<div class="image-list__content">
+						<a href="" class="image-link">
+							<img src="images/thumbnail/image5.jpg" alt="" class="image-link__img">
+							
+						</a>	
+					</div>
+					<div class="image-list__content">
+						<a href="" class="image-link">
+							<img src="images/thumbnail/image6.jpg" alt="" class="image-link__img">
+							
+						</a>	
+					</div>			
+				</div>
+
+				<div class="more">
+					<div class="button more__button">
+						さらに表示
+					</div>
+				</div>
+			</div>
+			
+		</article>
+	</main>
 
 </body>
 </html>

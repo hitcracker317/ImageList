@@ -1,11 +1,12 @@
 #main{
-	background-color: #fcc;
+	background-color: #f00;
 
 	.list{
 		display: flex;
 		justify-content: space-around;
 
 		li{
+			display: flex;
 			float: left;
 			color: #000;
 			list-style-type: none;
