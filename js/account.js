@@ -16,7 +16,6 @@ $(function(){
 		pcDomStracture();
 	}
 
-
 	$(window).resize(function() {
 		isSpSize = checkDeviceSize();
 		if(isSpSize){
@@ -25,7 +24,6 @@ $(function(){
 			pcDomStracture();
 		}
 	});
-
 
 	function spDomStracture(){
 		//SP表示時のDOM構造構築
