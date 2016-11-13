@@ -2,6 +2,11 @@ var spWidth = 735;
 
 
 $(function(){
+
+	$(".icon__img").ajustImage({
+		'imagePath' : $(".icon__img").attr("src")
+	});
+
 	checkDeviceSize();
 
 	$(window).resize(function() {
@@ -13,8 +18,8 @@ $(function(){
 			spDomStracture();
 		} else {
 			pcDomStracture();
-		}	
-	} 
+		}
+	}
 
 	function spDomStracture(){
 		//SP表示時のDOM構造構築

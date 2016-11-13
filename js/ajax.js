@@ -53,11 +53,13 @@ $(function(){
 
 			var imageContent = $("<div class='image-list__content'><a href='#' class='image-link'><img src='' alt='' class='image-link__img'></a></div>");
 
-			//imageを設置
+			//imageを設置 & トリミング
 			var imagePath = thumbnailArray[i];
 			var imageElement = imageContent.find(".image-link__img");
 			imageElement.attr("src",imagePath);
-			imageElement.ajustImage();
+			imageElement.ajustImage({
+				'imagePath' : imagePath
+			});
 
 			//DOM追加
 			imageList.append(imageContent);
