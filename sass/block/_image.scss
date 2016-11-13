@@ -4,10 +4,10 @@ $sp_margin: 3px;
 .image-list__content {
 	display: flex;
 	justify-content: flex-start;
-	width: 33.3%;
+	width: calc(33.3% - #{$pc_margin});
 	box-sizing: border-box;
 	margin-bottom: $pc_margin;
-	padding-right: $pc_margin;
+	margin-right: $pc_margin;
 
 
 	.image-link {
@@ -33,30 +33,15 @@ $sp_margin: 3px;
 		}
 	}
 
-	&:nth-child(3n){
-		padding-right: 0px;
-	}
-
 	@include sp {
-		width: 50%;
+		width: calc(50% - #{$sp_margin});
 		margin-bottom: $sp_margin;
-		padding-right: $sp_margin;
+		margin-right: $sp_margin;
 
 		.image-link {
 			&::before {
 				padding-top: calc(100% - #{$sp_margin});
 			}
 		}
-
-		&:nth-child(2n){
-			padding-right: 0px;
-		}
-		&:nth-child(3n){
-			padding-right: 3px;
-		}
-		&:nth-child(6n){
-			padding-right: 0px;
-		}
-
 	}
 }
