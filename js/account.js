@@ -1,29 +1,20 @@
-var tabWidth = 735;
-var isSpSize = false;
+var spWidth = 735;
 
 
 $(function(){
-	function checkDeviceSize() {
-		if ($(window).width() <= tabWidth){
-			return true;
-		}	
-	} 
-
-	isSpSize = checkDeviceSize();
-	if(isSpSize){
-		spDomStracture();
-	} else {
-		pcDomStracture();
-	}
+	checkDeviceSize();
 
 	$(window).resize(function() {
-		isSpSize = checkDeviceSize();
-		if(isSpSize){
+		checkDeviceSize();
+	});
+
+	function checkDeviceSize() {
+		if ($(window).outerWidth() <= spWidth){
 			spDomStracture();
 		} else {
 			pcDomStracture();
-		}
-	});
+		}	
+	} 
 
 	function spDomStracture(){
 		//SP表示時のDOM構造構築

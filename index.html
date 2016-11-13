@@ -5,14 +5,15 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>ImageList</title>
 	<link rel="stylesheet" href="css/min/style.min.css">
-	
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
-	<script src="js/min/common.min.js"></script>
-	<script src="js/min/script.min.js"></script>
-	<script src="js/min/account.min.js"></script>
 
+	<script src="js/image_ajust.js"></script>
+	<script src="js/min/account.min.js"></script>
 	<script src="js/ajax.js"></script>
+	<script src="js/imgLiquid.js"></script>
+
 </head>
 <body>
 
@@ -21,7 +22,7 @@
 			<header id="header">
 				<div class="header__icon">
 					<div class="icon__inner">
-						<img src="images/profile_image.jpg" alt="">	
+						<img src="images/profile_image.jpg" alt="" class="icon__img">
 					</div>
 				</div>
 				<div class="header__profile">
@@ -50,19 +51,20 @@
 						<span>こんにちは泥酔ガールです★普段はシラフです!撮りためた写真を日々投稿★趣味は飲酒と海外旅行と美容と堕落★Follow me★★★★★★</span>
 					</div>
 				</div>
-			</header>	
-			
+			</header>
+
 			<div class="image-wrapper">
 				<div class="image-list">
+					<!-- 画像配置位置 -->
 				</div>
 
 				<div class="more">
 					<div class="button more__button">
-						さらに表示
+						<p class="more__text">More</p>
 					</div>
 				</div>
 			</div>
-			
+
 		</article>
 	</main>
 

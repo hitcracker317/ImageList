@@ -6,8 +6,8 @@ $sp_margin: 3px;
 	justify-content: flex-start;
 	width: 33.3%;
 	box-sizing: border-box;
-	margin-bottom: 28px;
-	padding-right: 28px;
+	margin-bottom: $pc_margin;
+	padding-right: $pc_margin;
 
 
 	.image-link {
@@ -19,20 +19,17 @@ $sp_margin: 3px;
 
 
 		.image-link__img {
-	        position: absolute;
+	      position: absolute;
 		    top: 50%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
-		    display: block;
-		    width: auto;
-		    height: 100%;
-		}	
-		
-			
+		}
+
+
 		&::before {
 			content: "";
 			display: block;
-			padding-top: calc(100% - 28px);
+			padding-top: calc(100% - #{$pc_margin});
 		}
 	}
 
@@ -42,15 +39,15 @@ $sp_margin: 3px;
 
 	@include sp {
 		width: 50%;
-		margin-bottom: 3px;
-		padding-right: 3px;
-		
+		margin-bottom: $sp_margin;
+		padding-right: $sp_margin;
+
 		.image-link {
 			&::before {
-				padding-top: calc(100% - 3px);
-			}	
+				padding-top: calc(100% - #{$sp_margin});
+			}
 		}
-		
+
 		&:nth-child(2n){
 			padding-right: 0px;
 		}
@@ -58,8 +55,8 @@ $sp_margin: 3px;
 			padding-right: 3px;
 		}
 		&:nth-child(6n){
-			padding-right: 0px;	
+			padding-right: 0px;
 		}
 
-	}	
+	}
 }

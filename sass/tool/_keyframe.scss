@@ -1,0 +1,41 @@
+@mixin text_animation(){
+  animation: text_animation 1.5s linear infinite;
+  @keyframes text_animation{
+    0% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin rotate_border(){
+  animation: rotate_border 2s linear infinite;
+  @keyframes rotate_border{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@mixin square_gradient($base_color, $gradation_color){
+  animation: square_gradient 2s linear infinite;
+  @keyframes square_gradient{
+    0% {
+      background: $base_color;
+    }
+    50% {
+      background: $gradation_color;
+    }
+    100% {
+      background: $base_color;
+    }
+  }
+}

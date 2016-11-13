@@ -1,8 +1,10 @@
+$base_button_color: #3897f0;
+
 .button {
     padding: 0 11px;
     border-radius: 3px;
-    border: 1px solid #3897f0;
-    color: #3897f0;
+    border: 1px solid $base_button_color;
+    color: $base_button_color;
     font-size: 1.6rem;
     line-height: 29px;
     font-weight: 600;
@@ -30,13 +32,57 @@
         padding: 0; 
         border-width: 2px;
         border-radius: 50%;
-
         line-height: 120px;
-            
+
+        .more__text {
+            font-size: 1.4rem;
+        }
     }
 
     @include sp {
-        font-size: 1.4rem;    
-        line-height: 3.4rem;
+        .more__text { 
+            font-size: 1.4rem;    
+            line-height: 3.4rem;        
+        }
+        
+    }
+}
+
+.more__button_loading {
+    $border_width: 2px;
+    $gradation_base_color: #c5d2db;
+    $gradation_middle_color: #efefef;
+
+    @extend .more__button;
+    position: relative;
+    border: none;
+    cursor: default;
+    background-color: $base_background_color;
+    color: $gradation_base_color;
+
+    .more__text {
+        @include text_animation();    
+    }
+
+    &:after{
+        $border_size: $border_width * 2;
+
+        content:"";
+        position: absolute;
+        top: -$border_width;
+        left: -$border_width;
+        width: calc(100% + #{$border_size}); 
+        height: calc(100% + #{$border_size});
+        border-radius: 50%;
+        background: linear-gradient(to bottom, $gradation_base_color 0%,$gradation_middle_color 100%);
+        z-index: -1;
+        @include rotate_border();
+    }
+    
+    @include sp {
+        &:after{
+            border-radius: 3px;
+            @include square_gradient($gradation_base_color, $gradation_middle_color);
+        }
     }
 }
