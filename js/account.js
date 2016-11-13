@@ -3,10 +3,6 @@ var spWidth = 735;
 
 $(function(){
 
-	$(".icon__img").ajustImage({
-		'imagePath' : $(".icon__img").attr("src")
-	});
-
 	checkDeviceSize();
 
 	$(window).resize(function() {

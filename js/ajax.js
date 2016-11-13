@@ -51,14 +51,13 @@ $(function(){
 		//画像のDOMを生成
 		for (var i = beforeImageContentLength; i < afterImageContentLength; i++){
 
-			var imageContent = $("<div class='image-list__content'><a href='#' class='image-link'><img src='' alt='' class='image-link__img'></a></div>");
+			var imageContent = $("<div class='image-list__content'><a href='#' class='image-link'></a></div>");
 
-			//imageを設置 & トリミング
+			//imageを設置
 			var imagePath = thumbnailArray[i];
-			var imageElement = imageContent.find(".image-link__img");
-			imageElement.attr("src",imagePath);
-			imageElement.ajustImage({
-				'imagePath' : imagePath
+			var imageElement = imageContent.find(".image-link");
+			imageElement.css({
+				"background-image":"url(" + imagePath + ")"
 			});
 
 			//DOM追加
